@@ -23,10 +23,10 @@ public class EmployeeService extends ServiceBase {
      * @return 表示するデータのリスト
      */
     public List<EmployeeView> getPerPage(int page) {
-        List<Employee> employees = em.createNamedQuery(JpaConst.Q_EMP_GET_ALL, Employee.class)
-                .setFirstResult(JpaConst.ROW_PER_PAGE * (page - 1))
-                .setMaxResults(JpaConst.ROW_PER_PAGE)
-                .getResultList();
+        List<Employee> employees = em.createNamedQuery(JpaConst.Q_EMP_GET_ALL, Employee.class)  //getAllEmployee
+                .setFirstResult(JpaConst.ROW_PER_PAGE * (page - 1))    //最初の結果、ROW_PER_PAGE、1ページに表示するレコードの数
+                .setMaxResults(JpaConst.ROW_PER_PAGE)      //クエリーオブジェクトが取得するように設定された結果の最大件数。今回は15
+                .getResultList();  //結果のリスト
 
         return EmployeeConverter.toViewList(employees);
     }
