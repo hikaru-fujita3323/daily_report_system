@@ -35,17 +35,7 @@
          </script>
 
          <p>
-            <a href = "c:url value = '?action=${action}&command=${commIdx}' />">一覧に戻る</a>
+            <a href = "<c:url value = '?action=${action}&command=${commIdx}' />">一覧に戻る</a>
+        </p>
     </c:param>
 </c:import>
-
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>Insert title here</title>
-    </head>
-    <body>
-
-    </body>
-</html>
