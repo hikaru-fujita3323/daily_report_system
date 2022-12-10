@@ -17,7 +17,7 @@ public enum AttributeConst {
     LOGIN_EMP("login_employee"),
 
     //ログイン画面
-    LOGIN_ERR("loginErrar"),
+    LOGIN_ERR("loginError"),
 
     //従業員管理
     EMPLOYEE("employee"),
@@ -66,6 +66,7 @@ public enum AttributeConst {
     public Integer getIntegerValue() {
         return i;
     }
+
 
 
 
